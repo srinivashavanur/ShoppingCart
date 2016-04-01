@@ -1,0 +1,104 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;
+        <table style="font-size: 12pt; z-index: 103; left: 12px; color: navy; position: absolute;
+            top: 85px; background-color: silver; font-family: 'Arial Black'; height: 548px;">
+            <tr>
+                <td style="width: 120px; height: 28px">
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Style="z-index: 103;
+                        left: 11px; position: absolute; top: 18px" Width="104px">Home</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 28px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px; height: 109px">
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" Style="z-index: 103;
+                        left: 11px; position: absolute; top: 90px" Width="104px">Varieties of Cameras</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 109px">
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="102px" ImageUrl="~/images/camera.jpg"
+                        OnClick="ImageButton2_Click" Style="z-index: 100; left: 132px; position: absolute;
+                        top: 58px" Width="94px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px; height: 106px">
+                    <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Style="z-index: 103;
+                        left: 11px; position: absolute; top: 208px" Width="104px">Latest Mobiles</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 106px">
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="102px" ImageUrl="~/images/mobile.jpg"
+                        OnClick="ImageButton3_Click" Style="z-index: 100; left: 132px; position: absolute;
+                        top: 168px" Width="94px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px; height: 106px">
+                    <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Style="z-index: 103;
+                        left: 12px; position: absolute; top: 308px" Width="104px">Books for Success</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 106px">
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="102px" ImageUrl="~/images/book.jpg"
+                        OnClick="ImageButton4_Click" Style="z-index: 100; left: 131px; position: absolute;
+                        top: 276px" Width="94px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px; height: 106px">
+                    <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Style="z-index: 103;
+                        left: 13px; position: absolute; top: 431px" Width="104px">Sign Up</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 106px">
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="102px" ImageUrl="~/images/pen.jpg"
+                        OnClick="ImageButton5_Click" Style="z-index: 100; left: 132px; position: absolute;
+                        top: 385px" Width="94px" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px; height: 28px">
+                    <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" Style="z-index: 103;
+                        left: 14px; position: absolute; top: 490px" Width="104px">Login</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 28px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px; height: 28px">
+                    <asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Style="z-index: 103;
+                        left: 11px; position: absolute; top: 515px" Width="104px">Contact Us</asp:LinkButton>
+                </td>
+                <td style="width: 120px; height: 28px">
+                </td>
+            </tr>
+        </table>
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="69px" ImageUrl="~/images/showcart.jpg"
+            OnClick="ImageButton1_Click" Style="z-index: 100; left: 1422px; position: absolute;
+            top: 9px" Width="76px" />
+        <asp:Label ID="Label1" runat="server" BackColor="Silver" BorderStyle="Groove" Font-Bold="True"
+            Font-Italic="False" Font-Names="Garamond" Font-Size="XX-Large" ForeColor="Navy"
+            Height="70px" Style="z-index: 101; left: 10px; position: absolute; top: 3px; width: 1403px;"
+            Text="Shopping Cart"></asp:Label>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        <table style="z-index: 102; left: 266px; width: 790px; position: absolute; top: 90px;
+            height: 269px">
+            <tr>
+                <td style="width: 510px; height: 128px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
